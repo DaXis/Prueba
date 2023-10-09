@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/dark_primary_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:datePickerDialogTheme">@style/DateDialog_Theme</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Theme.AppCompat">
+        <item name="background">@color/primary_color</item>
+    </style>
+
+    <style name="Demo_Mode_SmallText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="Demo_Mode_SmallBoldText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_Mode_NormalText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="Demo_Mode_NormalBoldText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_Mode_LargeText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="Demo_Mode_LargeBoldText">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_Mode_TitleBoldText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_Button_Primary">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/bg_bt_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_Button_Secondary">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/bg_bt_secondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="Demo_Button_Not">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/bg_bt_not</item>
+        <item name="android:gravity">center</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_User_Name">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_User_MediumText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="Demo_Mode_InstructionBoldText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+    <style name="Demo_Steps_MediumText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_steps</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="progress_fraction_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="Demo_Mode_NormalTextField">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="Demo_Mode_NormalBlackTextField">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingStart">10dp</item>
+    </style>
+
+    <style name="Demo_Mode_LargeBoldTextDataField">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/atkinson_hyperlegible_regular</item>
+        <item name="android:background">@drawable/shape_stroke_ocr</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">17dp</item>
+        <item name="android:paddingBottom">17dp</item>
+        <item name="android:textColorHint">@color/place_holder</item>
+    </style>
+
+    <style name="Demo_Mode_Spinner">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/shape_stroke_ocr</item>
+        <item name="android:fontFamily">@font/atkinson_hyperlegible_regular</item>
+    </style>
+
+    <style name="spinnerTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_primary_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Demo_Mode_Dialog_Title">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Demo_Mode_Dialog_Body">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Demo_Mode_Dialog_Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dialog_button</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="DateDialog_Theme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/dark_primary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_bg</item>
+    </style>
+
+    <style name="Demo_Mode_WrongTextField">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red_wrong_data</item>
+        <item name="android:fontFamily">@font/prudentialmodern_medium</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorPrimary">#595959</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Demo_Mode_BoldTextField">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/prudentialmodern_bold</item>
+    </style>
+
+</resources>

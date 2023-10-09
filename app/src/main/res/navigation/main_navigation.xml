@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.prueba.flows.main.fragments.MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_to_example_one"
+            app:destination="@id/example_one_fragment" />
+
+        <action
+            android:id="@+id/action_to_example_two_three"
+            app:destination="@id/example_two_three_fragment" />
+
+        <action
+            android:id="@+id/action_to_example_four"
+            app:destination="@id/example_four_fragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/example_one_fragment"
+        android:name="com.prueba.flows.main.fragments.ExampleOneFragment"
+        tools:layout="@layout/fragment_example_one">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/example_two_three_fragment"
+        android:name="com.prueba.flows.main.fragments.ExampleTwoThreeFragment"
+        tools:layout="@layout/fragment_example_two_three">
+
+        <action
+            android:id="@+id/action_to_poke_detail"
+            app:destination="@id/poke_detail_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/poke_detail_fragment"
+        android:name="com.prueba.flows.main.fragments.PokeDetailFragment"
+        tools:layout="@layout/fragment_poke_detail">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/example_four_fragment"
+        android:name="com.prueba.flows.main.fragments.ExampleFourFragment"
+        tools:layout="@layout/fragment_eample_four">
+
+        <action
+            android:id="@+id/action_forgot_to_example_four_detail"
+            app:destination="@id/example_four_detail_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/example_four_detail_fragment"
+        android:name="com.prueba.flows.main.fragments.ExampleFourDetailFragment"
+        tools:layout="@layout/fragment_example_four_detail">
+
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_prudential_logo_top_margin">220dp</dimen>
+    <dimen name="permissions_prudential_verification_top_margin">40dp</dimen>
+    <dimen name="permission_prudential_labels_horizontal_margin">10dp</dimen>
+    <dimen name="permission_prudential_labels_vertical_margin">40dp</dimen>
+    <dimen name="permission_prudential_ubication_vertical_margin">30dp</dimen>
+    <dimen name="permission_prudential_subtitle_vertical_margin">15dp</dimen>
+    <dimen name="permission_prudential_continue_button_margin_horizontal">30dp</dimen>
+    <dimen name="permission_prudential_continue_button_margin_vertical">10dp</dimen>
+    <dimen name="permission_prudential_check_margins">10dp</dimen>
+    <dimen name="permission_prudential_terms_and_conditions_padding">3dp</dimen>
+    <dimen name="tooltip_height">153dp</dimen>
+    <dimen name="tooltip_width">233dp</dimen>
+    <dimen name="tooltip_margin_top">25dp</dimen>
+    <dimen name="pin_margin">1.65</dimen>
+</resources>

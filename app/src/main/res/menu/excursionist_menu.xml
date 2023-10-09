@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_e_one"
+            android:icon="@drawable/ic_google"
+            android:title="Opción 1" />
+
+        <item
+            android:id="@+id/nav_e_two"
+            android:icon="@drawable/ic_google"
+            android:title="Opción 2" />
+
+        <item
+            android:id="@+id/nav_e_three"
+            android:icon="@drawable/ic_google"
+            android:title="Opción 3" />
+
+        <item
+            android:id="@+id/nav_e_four"
+            android:icon="@drawable/ic_google"
+            android:title="Opción 4" />
+
+        <item
+            android:id="@+id/nav_e_five"
+            android:icon="@drawable/ic_google"
+            android:title="Opción 5" />
+    </group>
+
+</menu>

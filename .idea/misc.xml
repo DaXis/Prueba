@@ -1,0 +1,53 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/drawable/bg_bt_primary.xml" value="0.3305" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/drawable/bg_bt_secondary.xml" value="0.3305" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/drawable/dialog_bg.xml" value="0.4245" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/layout/activity_main.xml" value="0.44819819819819817" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/layout/activity_spash.xml" value="0.5348958333333333" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/layout/custom_dialog.xml" value="0.5348958333333333" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/layout/load_dialog.xml" value="0.5348958333333333" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/layout/main_bar.xml" value="0.5348958333333333" />
+        <entry key="..\:/Users/daxis/Documents/NaAt/Prudential/app/src/main/res/layout/main_frag.xml" value="0.2617753623188406" />
+        <entry key="app/src/main/res/drawable/bg_bt_primary.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/bg_bt_secondary.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/close_bt.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/dialog_bg.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/ic_advice.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/ic_cel_pag.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/ic_documento.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/ic_error.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/ic_identifications.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/ic_ine.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/ic_isotipo.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/ic_logo_prudential.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/layer_list_steps.xml" value="0.139288330078125" />
+        <entry key="app/src/main/res/drawable/shape_id_selection_layout.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/shape_progress_bar.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/shape_recommendation_layout.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/shape_steps.xml" value="0.1412353515625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.151268115942029" />
+        <entry key="app/src/main/res/layout/fragment_decide_flow.xml" value="0.151268115942029" />
+        <entry key="app/src/main/res/layout/fragment_id_selection.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_ocr_data.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_permissions.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_selected_id.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_steps.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.1671875" />
+        <entry key="app/src/main/res/layout/main_bar.xml" value="0.151268115942029" />
+        <entry key="app/src/main/res/layout/permissions_activity.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/permissions_fragment.xml" value="0.14791666666666667" />
+        <entry key="app/src/main/res/layout/terms_and_conditions_fragment.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

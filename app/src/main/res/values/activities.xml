@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activities">
+        <item>Paracaidismo</item>
+        <item>Salto base</item>
+        <item>Wingsuit</item>
+        <item>Surf</item>
+        <item>Bodyboarding</item>
+        <item>Parapente</item>
+        <item>Snowboard</item>
+        <item>Wakeboarding</item>
+        <item>Wakesurf</item>
+        <item>Kitesurf</item>
+        <item>Escalada</item>
+        <item>Alpinismo</item>
+        <item>Puenting</item>
+        <item>Rafting</item>
+        <item>Buceo</item>
+        <item>Inmersiones a pulmón</item>
+        <item>Canyoning</item>
+        <item>Barranquismo</item>
+        <item>Kayak</item>
+        <item>Natación en aguas abiertas</item>
+        <item>Downhill</item>
+        <item>Skateboarding vertical</item>
+        <item>Skateboarding pool</item>
+        <item>BMX vert</item>
+        <item>BMX dirt</item>
+        <item>BMX park</item>
+        <item>Motociclismo</item>
+        <item>Descenso</item>
+        <item>Parkour</item>
+    </string-array>
+</resources>
