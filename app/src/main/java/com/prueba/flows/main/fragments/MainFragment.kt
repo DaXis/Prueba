@@ -32,14 +32,23 @@ class MainFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            buttonExampleOne.setOnClickListener {
+                listener?.onGoToExampleOne()
+            }
+
+            buttonExampleTwo.setOnClickListener {
+                listener?.onGoToExampleTwoThree()
+            }
+
+            buttonExampleFour.setOnClickListener {
+                listener?.onGoToExampleFour()
+            }
+        }
     }
 
     override fun onDetach() {
         super.onDetach()
         listener = null
-    }
-
-    private companion object {
-
     }
 }

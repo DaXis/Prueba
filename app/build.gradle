@@ -12,15 +12,15 @@ def versionAppQa = '1.0'
 def versionAppPreprod = '1.0'
 def versionApp = '1.0'
 
-def devUserUrl = '\"\"'
-def qaUserUrl = '\"\"'
-def preUserUrl = '\"\"'
-def prodUserUrl = '\"\"'
+def devUserUrl = '\"https://atomix.vg/\"'
+def qaUserUrl = '\"https://atomix.vg/\"'
+def preUserUrl = '\"https://atomix.vg/\"'
+def prodUserUrl = '\"https://atomix.vg/\"'
 
-def devPokeUrl = '\"\"'
-def qaPokeUrl = '\"\"'
-def prePokeUrl = '\"\"'
-def prodPokeUrl = '\"\"'
+def devPokeUrl = '\"https://pokeapi.co/api/v2/\"'
+def qaPokeUrl = '\"https://pokeapi.co/api/v2/\"'
+def prePokeUrl = '\"https://pokeapi.co/api/v2/\"'
+def prodPokeUrl = '\"https://pokeapi.co/api/v2/\"'
 
 def devLocation = '\"\"'
 def qaLocation = '\"\"'
@@ -234,11 +234,14 @@ dependencies {
     //GEO
     implementation 'com.google.android.gms:play-services-location:21.0.1'
 
-    //picasso
-    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
 
     //lottie
     implementation 'com.airbnb.android:lottie:4.2.0'
+
+    //color picker
+    implementation 'com.github.duanhong169:colorpicker:1.1.6'
 
 
     //test

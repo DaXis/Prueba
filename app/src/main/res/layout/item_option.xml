@@ -6,4 +6,5 @@
     android:layout_height="wrap_content"
     android:background="@drawable/ic_country_item"
     android:padding="10dp"
+    android:maxLength="20"
     android:text="País" />

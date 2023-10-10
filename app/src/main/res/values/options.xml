@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options">
+        <item>https://cdn.atomix.vg/wp-content/uploads/2023/10/ichop-255x160.jpg</item>
+        <item>https://cdn.atomix.vg/wp-content/uploads/2023/09/disney-255x160.png</item>
+        <item>https://cdn.atomix.vg/wp-content/uploads/2023/10/t2-255x160.jpg</item>
+        <item>Said Garcia</item>
+        <item>Algo mas de algun lado</item>
+        <item>asdafsdf</item>
+        <item></item>
+    </string-array>
+</resources>
