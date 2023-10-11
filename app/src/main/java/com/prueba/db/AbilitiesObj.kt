@@ -9,7 +9,11 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 @Entity
 data class AbilitiesObj(
-    @PrimaryKey
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "table_id")
+    val tableId: Int = 0,
+
     @ColumnInfo(name = "id")
     val id: Int,
 

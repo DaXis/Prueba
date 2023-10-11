@@ -68,6 +68,8 @@ class ExampleTwoThreeFragment : BaseFragment(), PokedexListAdapter.ListItemClick
                 pokeAdapter.differ.submitList(actions.list)
                 isLoading = false
             }
+
+            else -> {}
         }
     }
 
@@ -101,7 +103,7 @@ class ExampleTwoThreeFragment : BaseFragment(), PokedexListAdapter.ListItemClick
     }
 
     override fun onItemClick(item: PokemonObj, position: Int) {
-        listener?.onGoToPokeDetail()
+        listener?.onGoToPokeDetail(item.id)
     }
 
     private companion object {

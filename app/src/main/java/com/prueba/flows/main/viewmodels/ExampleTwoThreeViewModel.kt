@@ -23,6 +23,8 @@ class ExampleTwoThreeViewModel @Inject constructor(
     private val action = BaseSingleLiveEvent<ExampleTwoThreeActions>()
     fun getAction(): LiveData<ExampleTwoThreeActions> = action
 
+    private var count = 1
+
     fun consumePokeList(offset: String) {
         disposable.add(
             repository.consumePokeList(offset)
@@ -44,9 +46,9 @@ class ExampleTwoThreeViewModel @Inject constructor(
     }
 
     private fun prepareList(results: List<PokedexResult>?) {
-        results?.let {
+        results?.let { pokedex ->
             val list = ArrayList<PokemonObj>()
-            results.forEach { pokemon ->
+            pokedex.forEach { pokemon ->
                 val pokeId = pokemon.url?.toPokeId().orZero()
                 list.add(
                     PokemonObj(
@@ -57,22 +59,21 @@ class ExampleTwoThreeViewModel @Inject constructor(
                 )
             }
             list.forEach {
-                insertPokedex(it)
+                insertPokedex(it, list.size)
             }
         }
     }
 
-    private var count = 0
-    private fun insertPokedex(pokemon: PokemonObj) {
+    private fun insertPokedex(pokemon: PokemonObj, size: Int) {
         disposable.add(
             dbRepository.insertPokemon(
                 pokemon
             )
                 .subscribe(
                     {
-                        if (count == 24) {
+                        if (count == size) {
                             getAllPokemon()
-                            count = 0
+                            count = 1
                         } else {
                             count++
                         }

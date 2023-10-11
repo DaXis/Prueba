@@ -34,5 +34,5 @@ data class AbilitiesObj(
 
 @Parcelize
 data class AbilitieObj(
-    @SerializedName("name") var mane: String,
+    @SerializedName("name") var name: String,
 ) : Parcelable

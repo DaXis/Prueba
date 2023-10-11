@@ -48,6 +48,8 @@
         android:name="com.prueba.flows.main.fragments.PokeDetailFragment"
         tools:layout="@layout/fragment_poke_detail">
 
+        <argument android:name="poke_id" app:argType="integer"/>
+
     </fragment>
 
     <fragment

@@ -79,9 +79,9 @@ class MainActivity : BaseNavActivity(), NextStepListener {
         )
     }
 
-    override fun onGoToPokeDetail() {
+    override fun onGoToPokeDetail(pokeId: Int) {
         currentNavController().navigate(
-            ExampleTwoThreeFragmentDirections.actionToPokeDetail()
+            ExampleTwoThreeFragmentDirections.actionToPokeDetail(pokeId)
         )
     }
 

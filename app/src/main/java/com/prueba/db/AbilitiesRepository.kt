@@ -14,4 +14,13 @@ class AbilitiesRepository @Inject constructor(
         abilitiesDao.insertAbility(ability)
     }.applySchedulers()
 
+    fun getAbilityByIdAndName(id: Int, name: String) = abilitiesDao.getAbilityByIdAndName(id, name)
+        .map {
+            it
+        }.applySchedulers()
+
+    fun getAbilityById(id: Int) = abilitiesDao.getAbilityById(id)
+        .map {
+            it
+        }.applySchedulers()
 }

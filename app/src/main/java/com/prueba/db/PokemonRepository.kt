@@ -14,10 +14,6 @@ class PokemonRepository @Inject constructor(
         pokemonDao.insertPokemon(pokemon)
     }.applySchedulers()
 
-    /*fun insertAllPokemon(pokedex: List<PokemonObj>?): Completable = Completable.fromCallable {
-        pokemonDao.insertAllPokemon(pokedex)
-    }.applySchedulers()*/
-
     fun getPokemonById(id: String) = pokemonDao.getPokemonById(id)
         .map {
             it
@@ -27,4 +23,16 @@ class PokemonRepository @Inject constructor(
         .map {
             it
         }.applySchedulers()
+
+    fun updatePokemonData(pokemon: PokemonObj): Completable = Completable.fromCallable {
+        pokemonDao.updatePokemonData(
+            pokemon.id,
+            pokemon.height.orEmpty(),
+            pokemon.order.orEmpty(),
+            pokemon.weight.orEmpty(),
+            pokemon.typeOne.orEmpty(),
+            pokemon.typeTwo.orEmpty()
+        )
+    }.applySchedulers()
+
 }

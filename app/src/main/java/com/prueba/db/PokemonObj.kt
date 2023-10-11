@@ -23,7 +23,7 @@ data class PokemonObj(
     @ColumnInfo(name = "height")
     val height: String? = "",
 
-    @ColumnInfo(name = "order")
+    @ColumnInfo(name = "order_id")
     val order: String? = "",
 
     @ColumnInfo(name = "weight")
