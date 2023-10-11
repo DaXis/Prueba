@@ -34,4 +34,18 @@ object UtilsExtensions {
             this.orEmpty()
         }
     }
+
+    fun String.toPokeId(): Int {
+        return if (this.isNotNullOrEmpty()) {
+            var aux = this.drop(33)
+            aux = aux.replace("/","")
+            aux.toInt()
+        } else {
+            0
+        }
+    }
+
+    fun Int.toSprite(): String {
+        return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this}.png"
+    }
 }

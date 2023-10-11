@@ -35,7 +35,6 @@
 
     <style name="Demo_Mode_NormalBoldText">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/text_primary_color</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/prudentialmodern_bold</item>
     </style>

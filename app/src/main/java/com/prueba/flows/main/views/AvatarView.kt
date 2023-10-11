@@ -19,11 +19,13 @@ class AvatarView @JvmOverloads constructor(
 ) : CardView(context, attrs) {
 
     var default = "default"
+    private var attrs: AttributeSet? = null
     private lateinit var container: FrameLayout
     private lateinit var avatarImage: ImageView
     private lateinit var avatarText: TextView
 
     init {
+        this@AvatarView.attrs = attrs
         cardViewParams()
         initLayoutContainer()
         initAvatarImageView()
@@ -31,11 +33,13 @@ class AvatarView @JvmOverloads constructor(
     }
 
     private fun cardViewParams() {
-        layoutParams = ViewGroup.LayoutParams(
-            convertPixelsToDp(200f).toInt(),
-            convertPixelsToDp(200f).toInt()
-        )
-        radius = convertPixelsToDp(900f)
+        if(attrs == null) {
+            layoutParams = ViewGroup.LayoutParams(
+                convertPixelsToDp(200f).toInt(),
+                convertPixelsToDp(200f).toInt()
+            )
+            radius = convertPixelsToDp(900f)
+        }
     }
 
     private fun initLayoutContainer() {

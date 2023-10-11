@@ -10,19 +10,18 @@ class PruebaRepository @Inject constructor(
     private val processApi: PruebaServicesApi
 ) {
 
-    fun consumeFlowManager() =
-        processApi.consumeOKImage().applySchedulers()
+    fun consumePokeList(offset: String) =
+        processApi.consumePokeList(
+            LIMIT,
+            offset
+        ).applySchedulers()
 
-    fun consumeFailImage() =
-        processApi.consumeFailImage().applySchedulers()
-
-    fun consumePokeList() =
-        processApi.consumePokeList().applySchedulers()
-
-    fun consumePokeDetail() =
-        processApi.consumePokeDetail().applySchedulers()
+    fun consumePokeDetail(number: String) =
+        processApi.consumePokeDetail(
+            number
+        ).applySchedulers()
 
     private companion object {
-
+        const val LIMIT = "25"
     }
 }

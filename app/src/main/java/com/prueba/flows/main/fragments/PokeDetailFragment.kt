@@ -9,7 +9,7 @@ import androidx.lifecycle.Observer
 import com.prueba.common.base.BaseFragment
 import com.prueba.common.utils.viewBinding
 import com.prueba.databinding.FragmentPokeDetailBinding
-import com.prueba.flows.main.actions.ExampleTwoTrheeActions
+import com.prueba.flows.main.actions.ExampleTwoThreeActions
 import com.prueba.flows.main.interfaces.NextStepListener
 import com.prueba.flows.main.viewmodels.PokeDetailViewModel
 import javax.inject.Inject
@@ -55,7 +55,7 @@ class PokeDetailFragment : BaseFragment() {
         }
     }
 
-    private fun eventListener(actions: ExampleTwoTrheeActions) {
+    private fun eventListener(actions: ExampleTwoThreeActions) {
 
     }
 }

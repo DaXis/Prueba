@@ -1,7 +1,7 @@
 package com.prueba.di.modules
 
 import android.content.Context
-import com.prueba.db.PrudentialDataBase
+import com.prueba.db.PokedexDataBase
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -10,13 +10,13 @@ import javax.inject.Singleton
 class DataBaseModule {
     @Singleton
     @Provides
-    fun provideDatabase(context: Context) = PrudentialDataBase.getInstance(context)
+    fun provideDatabase(context: Context) = PokedexDataBase.getInstance(context)
 
     @Provides
     @Singleton
-    fun provideUserDao(db: PrudentialDataBase) = db.userDao()
+    fun providePokemonDao(db: PokedexDataBase) = db.pokemonDao()
 
     @Provides
     @Singleton
-    fun provideOCRDataDao(db: PrudentialDataBase) = db.ocrDataDao()
+    fun provideAbilitiesDao(db: PokedexDataBase) = db.abilitiesDao()
 }

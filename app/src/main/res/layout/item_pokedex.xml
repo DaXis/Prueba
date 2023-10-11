@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="25dp"
+    android:layout_marginVertical="15dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="15dp"
+    card:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <com.prueba.flows.main.views.AvatarView
+            android:id="@+id/cardView_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_name"
+            style="@style/Demo_Mode_NormalBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView_avatar"
+            app:layout_constraintTop_toTopOf="@+id/cardView_avatar"
+            android:layout_marginStart="10dp"
+            tools:text="Pokemon" />
+
+        <TextView
+            android:id="@+id/textView_number"
+            style="@style/Demo_Mode_NormalBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/cardView_avatar"
+            app:layout_constraintStart_toStartOf="@+id/cardView_avatar"
+            app:layout_constraintTop_toTopOf="@+id/cardView_avatar"
+            android:layout_marginTop="60dp"
+            android:elevation="2dp"
+            tools:text="01" />
+
+        <ImageView
+            android:id="@+id/imageView_type_one"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_type_two"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_type_two"
+            app:layout_constraintTop_toTopOf="@+id/imageView_type_two" />
+
+        <ImageView
+            android:id="@+id/imageView_type_two"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_name"
+            app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

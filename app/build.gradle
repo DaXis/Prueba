@@ -12,11 +12,6 @@ def versionAppQa = '1.0'
 def versionAppPreprod = '1.0'
 def versionApp = '1.0'
 
-def devUserUrl = '\"https://atomix.vg/\"'
-def qaUserUrl = '\"https://atomix.vg/\"'
-def preUserUrl = '\"https://atomix.vg/\"'
-def prodUserUrl = '\"https://atomix.vg/\"'
-
 def devPokeUrl = '\"https://pokeapi.co/api/v2/\"'
 def qaPokeUrl = '\"https://pokeapi.co/api/v2/\"'
 def prePokeUrl = '\"https://pokeapi.co/api/v2/\"'
@@ -28,12 +23,12 @@ def preLocation = '\"\"'
 def prodLocation = '\"\"'
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.prueba"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "$versionApp"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -56,29 +51,25 @@ android {
         dev {
             versionName "$versionAppDev-develop"
             resValue "string", "app_name", "\"Prueba (Dev)\""
-            buildConfigField("String", "ENDPOINT", devUserUrl)
-            buildConfigField("String", "POKE_URL", devPokeUrl)
+            buildConfigField("String", "ENDPOINT", devPokeUrl)
             buildConfigField("String", "LOCATION_URL", devLocation)
         }
         qa {
             versionName "$versionAppQa-qa"
             resValue "string", "app_name", "\"Prueba (QA)\""
-            buildConfigField("String", "ENDPOINT", qaUserUrl)
-            buildConfigField("String", "POKE_URL", qaPokeUrl)
+            buildConfigField("String", "ENDPOINT", qaPokeUrl)
             buildConfigField("String", "LOCATION_URL", qaLocation)
         }
         pre {
             versionName "$versionAppPreprod-pre"
             resValue "string", "app_name", "\"Prueba (PRE)\""
-            buildConfigField("String", "ENDPOINT", preUserUrl)
-            buildConfigField("String", "POKE_URL", prePokeUrl)
+            buildConfigField("String", "ENDPOINT", prePokeUrl)
             buildConfigField("String", "LOCATION_URL", preLocation)
         }
         prod {
             versionName "$versionApp"
             resValue "string", "app_name", "\"Prueba\""
-            buildConfigField("String", "ENDPOINT", prodUserUrl)
-            buildConfigField("String", "POKE_URL", prodPokeUrl)
+            buildConfigField("String", "ENDPOINT", prodPokeUrl)
             buildConfigField("String", "LOCATION_URL", prodLocation)
         }
     }
@@ -139,6 +130,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+
     lint {
         checkReleaseBuilds false
     }
@@ -176,14 +168,14 @@ dependencies {
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2_adapter"
 
     //Room
-    def room_version = "2.4.3"
+    def room_version = "2.5.2"
     def persistence_version = "1.1.1"
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
     implementation "androidx.room:room-paging:$room_version"
     implementation "androidx.room:room-rxjava2:$room_version"
-    implementation 'androidx.paging:paging-compose:1.0.0-alpha17'
+    implementation 'androidx.paging:paging-compose:3.3.0-alpha02'
     implementation "android.arch.persistence.room:rxjava2:$persistence_version"
     implementation "android.arch.persistence.room:runtime:$persistence_version"
     kapt "android.arch.persistence.room:compiler:$persistence_version"
@@ -242,6 +234,9 @@ dependencies {
 
     //color picker
     implementation 'com.github.duanhong169:colorpicker:1.1.6'
+
+    //paging
+    implementation 'androidx.paging:paging-runtime-ktx:3.3.0-alpha02'
 
 
     //test

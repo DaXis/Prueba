@@ -8,7 +8,7 @@ class SupportInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
-        val newUrl = if (BaseConfig.HAVE_ALTERNATIVE_URL) {
+        val newUrl = if (BaseConfig.HAVE_ALTERNATIVE_URL && BaseConfig.USE_ALTERNATIVE_URL) {
             val baseUrl = getAlternativeUrl()
                 ?: request.url.newBuilder().build()
 
@@ -31,8 +31,7 @@ class SupportInterceptor : Interceptor {
     }
 
     private fun getAlternativeUrl() = when (SELECTED_URL) {
-        0 -> BaseConfig.POKE_URL?.toHttpUrl()
-        1 -> BaseConfig.LOCATION_URL?.toHttpUrl()
+        0 -> BaseConfig.LOCATION_URL?.toHttpUrl()
         else -> BaseConfig.BASE_URL.toHttpUrl()
     }
 }

@@ -7,27 +7,27 @@ import androidx.room.RoomDatabase
 import com.prueba.db.ConstantsValues.DB_NAME
 import com.prueba.db.ConstantsValues.DB_VERSION
 
-@Database(entities = [UserObj::class, OCRDataObj::class], version = DB_VERSION, exportSchema = false)
-abstract class PrudentialDataBase : RoomDatabase() {
+@Database(entities = [PokemonObj::class, AbilitiesObj::class], version = DB_VERSION, exportSchema = false)
+abstract class PokedexDataBase : RoomDatabase() {
 
-    abstract fun userDao(): UserDao
-    abstract fun ocrDataDao(): OCRDataDao
+    abstract fun pokemonDao(): PokemonDao
+    abstract fun abilitiesDao(): AbilitiesDao
 
     companion object {
 
         @Volatile
-        private var INSTANCE: PrudentialDataBase? = null
+        private var INSTANCE: PokedexDataBase? = null
 
-        fun getInstance(context: Context): PrudentialDataBase {
+        fun getInstance(context: Context): PokedexDataBase {
             return INSTANCE ?: synchronized(this) {
                 INSTANCE ?: buildDataBase(context).also { INSTANCE = it }
             }
         }
 
-        private fun buildDataBase(context: Context): PrudentialDataBase {
+        private fun buildDataBase(context: Context): PokedexDataBase {
             return Room.databaseBuilder(
                 context.applicationContext,
-                PrudentialDataBase::class.java,
+                PokedexDataBase::class.java,
                 DB_NAME
             )
                 .fallbackToDestructiveMigration()
