@@ -8,7 +8,6 @@ import com.prueba.db.PokemonRepository
 import com.prueba.flows.main.actions.ExampleTwoThreeActions
 import com.prueba.flows.main.api.models.response.PokedexResult
 import com.prueba.flows.main.api.repository.PruebaRepository
-import com.prueba.utils.PruebaPreferencesManager
 import com.prueba.utils.UtilsExtensions.orZero
 import com.prueba.utils.UtilsExtensions.toPokeId
 import com.prueba.utils.UtilsExtensions.toSprite
@@ -16,8 +15,7 @@ import javax.inject.Inject
 
 class ExampleTwoThreeViewModel @Inject constructor(
     private val repository: PruebaRepository,
-    private val dbRepository: PokemonRepository,
-    private val provider: PruebaPreferencesManager
+    private val dbRepository: PokemonRepository
 ) : BaseViewModel() {
 
     private val action = BaseSingleLiveEvent<ExampleTwoThreeActions>()

@@ -1,6 +1,5 @@
 package com.prueba.flows.main.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +11,6 @@ import com.prueba.common.utils.viewBinding
 import com.prueba.databinding.FragmentPokeDetailBinding
 import com.prueba.db.PokemonObj
 import com.prueba.flows.main.actions.ExampleTwoThreeActions
-import com.prueba.flows.main.interfaces.NextStepListener
 import com.prueba.flows.main.viewmodels.PokeDetailViewModel
 import com.prueba.utils.TypesConstants
 import com.prueba.utils.UtilsExtensions.orZero
@@ -27,14 +25,7 @@ class PokeDetailFragment : BaseFragment() {
         FragmentPokeDetailBinding.inflate(layoutInflater)
     }
 
-    private var listener: NextStepListener? = null
-
     private val args: PokeDetailFragmentArgs by navArgs()
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        listener = requireContext() as? NextStepListener
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,11 +37,6 @@ class PokeDetailFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bindingViewModel()
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        listener = null
     }
 
     private fun bindingViewModel() {
