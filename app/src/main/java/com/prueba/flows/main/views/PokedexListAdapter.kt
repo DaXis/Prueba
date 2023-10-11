@@ -37,19 +37,21 @@ class PokedexListAdapter(private val listItemClickListener: ListItemClickListene
 
     override fun onBindViewHolder(holder: PokedexListAdapter.ViewHolder, position: Int) {
         val pokemon = differ.currentList[position]
-        holder.name.text = pokemon.name.toUpperCase()
-        holder.number.text = "#${pokemon.id}"
-        holder.sprite.loadFromUrl(pokemon.sprite)
+        holder.apply {
+            name.text = pokemon.name.toUpperCase()
+            number.text = "#${pokemon.id}"
+            sprite.loadFromUrl(pokemon.sprite)
 
-        holder.typeOne.setImageResource(TypesConstants().typesMap[pokemon.typeOne].orZero())
-        TypesConstants().typesMap[pokemon.typeTwo]?.let {
-            holder.typeTwo.setImageResource(it)
-        } ?: run {
-            holder.typeTwo.visibility = View.GONE
-        }
+            typeOne.setImageResource(TypesConstants().typesMap[pokemon.typeOne].orZero())
+            TypesConstants().typesMap[pokemon.typeTwo]?.let {
+                holder.typeTwo.setImageResource(it)
+            } ?: run {
+                holder.typeTwo.visibility = View.GONE
+            }
 
-        holder.root.setOnClickListener {
-            listItemClickListener.onItemClick(pokemon, position)
+            root.setOnClickListener {
+                listItemClickListener.onItemClick(pokemon, position)
+            }
         }
     }
 

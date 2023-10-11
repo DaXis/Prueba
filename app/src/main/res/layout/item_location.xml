@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="25dp"
+    android:layout_marginVertical="15dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="15dp"
+    card:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView_day"
+            style="@style/Demo_Mode_NormalBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="00/00/0000" />
+
+        <TextView
+            android:id="@+id/textView_hour"
+            style="@style/Demo_Mode_NormalBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_day"
+            app:layout_constraintStart_toEndOf="@+id/textView_day"
+            app:layout_constraintTop_toTopOf="@+id/textView_day"
+            tools:text="00:00:00" />
+
+        <TextView
+            android:id="@+id/textView_lat"
+            style="@style/Demo_Mode_NormalBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_day"
+            tools:text="00.000000" />
+
+        <TextView
+            android:id="@+id/textView_lon"
+            style="@style/Demo_Mode_NormalBoldText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_lat"
+            app:layout_constraintStart_toEndOf="@+id/textView_lat"
+            app:layout_constraintTop_toTopOf="@+id/textView_lat"
+            tools:text="00.000000" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
